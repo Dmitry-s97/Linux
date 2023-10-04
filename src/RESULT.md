@@ -211,17 +211,37 @@ DHCP — протокол прикладного уровня модели TCP/I
   - загрузку памяти
   - pid процесса занимающего больше всего памяти
   - pid процесса, занимающего больше всего процессорного времени
+
+<img src="img/top.jpg" alt="drawing" width="600"/>
+
 - В отчёт вставить скрин с выводом команды htop:
   - отсортированному по PID, PERCENT_CPU, PERCENT_MEM, TIME
+
+<img src="img/pid.jpg" alt="drawing" width="600"/>
+  
+<img src="img/CPU.jpg" alt="drawing" width="600"/>
+
+<img src="img/mem.jpg" alt="drawing" width="600"/>
+
   - отфильтрованному для процесса sshd
-  - с процессом syslog, найденным, используя поиск 
+
+<img src="img/sshd.jpg" alt="drawing" width="600"/>
+  
+  - с процессом syslog, найденным, используя поиск
+
+<img src="img/syslog.jpg" alt="drawing" width="600"/>
+
   - с добавленным выводом hostname, clock и uptime  
+
+<img src="img/clock_hostname_uptime.jpg" alt="drawing" width="600"/>
 
 ## Part 10. Использование утилиты **fdisk**
 
 ##### Запустить команду fdisk -l.
 
 - В отчёте написать название жесткого диска, его размер и количество секторов, а также размер swap.
+
+<img src="img/fdisk.jpg" alt="drawing" width="600"/>
 
 ## Part 11. Использование утилиты **df** 
 
@@ -231,7 +251,9 @@ DHCP — протокол прикладного уровня модели TCP/I
   - размер занятого пространства
   - размер свободного пространства
   - процент использования
-- Определить и написать в отчёт единицу измерения в выводе.  
+- Определить и написать в отчёт единицу измерения в выводе.
+
+<img src="img/df_1.jpg" alt="drawing" width="600"/>
 
 ##### Запустить команду df -Th.
 - В отчёте написать для корневого раздела (/):
@@ -241,6 +263,8 @@ DHCP — протокол прикладного уровня модели TCP/I
     - процент использования
 - Определить и написать в отчёт тип файловой системы для раздела.
 
+<img src="img/df_2.jpg" alt="drawing" width="600"/>
+
 ## Part 12. Использование утилиты **du**
 
 ##### Запустить команду du.
@@ -248,6 +272,16 @@ DHCP — протокол прикладного уровня модели TCP/I
 ##### Вывести размер всего содержимого в /var/log (не общее, а каждого вложенного элемента, используя *)
 
 - В отчёт вставить скрины с выводом всех использованных команд.
+
+<img src="img/du_home.jpg" alt="drawing" width="600"/>
+
+<img src="img/du_var.jpg" alt="drawing" width="600"/>
+
+<img src="img/du_var_log.jpg" alt="drawing" width="600"/>
+
+<img src="img/du_var_log_all_1.jpg" alt="drawing" width="600"/>
+
+<img src="img/du_var_log_all.jpg" alt="drawing" width="600"/>
 
 ## Part 13. Установка и использование утилиты **ncdu**
 
@@ -258,16 +292,38 @@ DHCP — протокол прикладного уровня модели TCP/I
 
 - В отчёт вставить скрины с выводом использованных команд.
 
+<img src="img/ncdu_home.jpg" alt="drawing" width="600"/>
+
+<img src="img/ncdu_var.jpg" alt="drawing" width="600"/>
+
+<img src="img/ncdu_var_log.jpg" alt="drawing" width="600"/>
+
 ## Part 14. Работа с системными журналами
 
 ##### Открыть для просмотра:
 ##### 1. /var/log/dmesg
+
+<img src="img/dmesg.jpg" alt="drawing" width="600"/>
+
 ##### 2. /var/log/syslog
-##### 3. /var/log/auth.log  
+
+<img src="img/syslog_part14.jpg" alt="drawing" width="600"/>
+
+##### 3. /var/log/auth.log
+
+<img src="img/authlog.jpg" alt="drawing" width="600"/>
 
 - Написать в отчёте время последней успешной авторизации, имя пользователя и метод входа в систему.
+
+<img src="img/last_login.jpg" alt="drawing" width="600"/>
+
 - Перезапустить службу SSHd.
+
+<img src="img/restart_ssh_1.jpg" alt="drawing" width="600"/>
+
 - Вставить в отчёт скрин с сообщением о рестарте службы (искать в логах).
+
+<img src="img/restart_ssh_2.jpg" alt="drawing" width="600"/>
 
 ## Part 15. Использование планировщика заданий **CRON**
 
@@ -276,5 +332,15 @@ DHCP — протокол прикладного уровня модели TCP/I
 - Вывести на экран список текущих заданий для CRON.
 - Вставить в отчёт скрины со строчками о выполнении и списком текущих задач.
 
+<img src="img/cron_1.jpg" alt="drawing" width="600"/>
+
+<img src="img/cron_2.jpg" alt="drawing" width="600"/>
+
+<img src="img/cron_3.jpg" alt="drawing" width="600"/>
+
+<img src="img/cron_4.jpg" alt="drawing" width="600"/>
+
 ##### Удалите все задания из планировщика заданий.
 - В отчёт вставьте скрин со списком текущих заданий для CRON.
+
+<img src="img/cron_5.jpg" alt="drawing" width="600"/>
